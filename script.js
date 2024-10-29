@@ -386,7 +386,7 @@ function displayUserData(userData) {
   const content = document.getElementById('user_name');
 
   if (userData) {
-    content.innerHTML = userData.first_name + userData.last_name;
+    content.innerHTML = userData.first_name + " " + userData.last_name;
     
   } else {
     content.innerHTML = 'User data not available.';
