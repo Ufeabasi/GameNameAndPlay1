@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game UI</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container" id="bg">
+        <!-- Top Bar -->
+        <div class="top-bar">
+          <div class="profil-top-bar">
+            <!-- <img src="https://via.placeholder.com/30" alt="User"> -->
+            <i class="material-icons nav__icon contact-icon">person</i>
+            <h>welcome <span id="user_name"></span></h>
+            
+          </div>
+            <!-- <span>Hamster Kombat</span> -->
+            <div>Level 2</div>
+        </div>
+
+        <!-- Task Buttons -->
+        <div class="task-buttons">
+          <div class="score-board task-button">Score: <span id="score">0</span></div>
+          <div class="score-board task-button">Time Left <span id="time">45</span></div>
+            <!-- <div class="task-button">0:25</div> -->
+            <!-- <div class="task-button">Daily Cipher</div> -->
+            <!-- <div class="task-button">303,000</div> -->
+        </div>
+
+        <!-- Center Display -->
+        <div class="center-display">
+           
+            <div class="wrapper">
+                <ul class="cards">
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-1.png" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-6.png" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-3.png" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-2.png" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-1.png" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-5.png" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-2.png" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-6.png" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-3.png" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-4.png" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-5.png" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-4.png" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-4.png" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-4.png" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-4.png" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images/que_icon.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images/img-4.png" alt="card-img">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              
+            <!-- <img src="https://via.placeholder.com/100" alt="Penguin">  -->
+            <!-- <div class="coins">7,606,442</div>
+        </div> -->
+
+        <!-- Bottom Stats -->
+         <!-- <div class="bottom-stats">
+            <div>
+                <span>Energy</span>
+                <div>327/9000</div>
+            </div>
+            <div>
+                <span>Level</span>
+                <div>6/10</div>
+            </div>
+            <div>
+                <span>Profile Per Hour</span>
+                <div>+19.79K</div>
+            </div>
+        </div> -->
+
+        <div class="game-controls">
+          <button id="start-game" class="game-button task-button">Start Game</button>
+          <button id="end-game" class="game-button task-button">End Game</button>
+      </div>
+    </div> 
+
+    <!-- Bottom Navigation -->
+    <!-- <div class="bottom-nav">
+        <div class="nav-item active">
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+            Earn
+            
+        </div>
+
+         <div class="nav-item">
+          <i class="fa fa-tasks"></i>
+          <span>Tasks</span>
+        </div>
+
+        <div class="nav-item">
+          <i class="fa fa-wallet "></i>
+            <span>Wallet</span>
+        </div>
+
+        <div class="nav-item">
+          <i class="fa fa-coins"></i>
+            <span>Airdrop</span>
+        </div>
+    </div> -->
+
+    
+<nav class="bottom-nav">
+  <a href="#" class="nav-item active">
+    <i class="material-icons nav__icon">paid</i>
+    <span class="nav__text">Earn</span>
+  </a>
+  <a href="#" class="nav-item nav__link--active">
+    <i class="material-icons nav__icon">note_alt</i>
+    <span class="nav__text">Tasks</span>
+  </a>
+  <a href="#" class="nav-item">
+    <i class="material-icons nav__icon">account_balance_wallet</i>
+    <span class="nav__text">Wallet</span>
+  </a>
+  <a href="#" class="nav-item">
+    <i class="material-icons nav__icon">lock</i>
+    <span class="nav__text">Airdrop</span>
+  </a>
+</nav>
+
+    <script src="./script.js"></script>
+    <script src="./display-user-data.js"></script>
+</body>
+</html>
+
+
