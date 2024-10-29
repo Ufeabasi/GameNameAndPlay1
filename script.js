@@ -183,33 +183,60 @@ endGameButton.addEventListener('click', endGame);
 // );
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const WebApp = window.Telegram.WebApp;
+// document.addEventListener('DOMContentLoaded', () => {
+//     const WebApp = window.Telegram.WebApp;
     
-    // Log initDataUnsafe to see what data is available
-    console.log(WebApp.initDataUnsafe);
+//     // Log initDataUnsafe to see what data is available
+//     console.log(WebApp.initDataUnsafe);
 
-    // Retrieve user data from the WebApp SDK
-    if (WebApp.initDataUnsafe && WebApp.initDataUnsafe.user) {
-        const userData = WebApp.initDataUnsafe.user;
-        displayUserData(userData);
-    } else {
-        console.error('User data is not available in WebApp.initDataUnsafe.');
-        document.getElementById('content').textContent = 'User data not found.';
-    }
-});
+//     // Retrieve user data from the WebApp SDK
+//     if (WebApp.initDataUnsafe && WebApp.initDataUnsafe.user) {
+//         const userData = WebApp.initDataUnsafe.user;
+//         displayUserData(userData);
+//     } else {
+//         console.error('User data is not available in WebApp.initDataUnsafe.');
+//         document.getElementById('content').textContent = 'User data not found.';
+//     }
+// });
+
+// // Function to display user data
+// function displayUserData(userData) {
+//     const content = document.getElementById('user_name');
+
+//     if (userData && userData.username) {
+//         content.textContent = userData.username;
+//     } else {
+//         console.error('Username not found.');
+//         content.textContent = 'User data not available.';
+//     }
+// }
+
+
 
 // Function to display user data
 function displayUserData(userData) {
-    const content = document.getElementById('user_name');
+  const content = document.getElementById('content');
 
-    if (userData && userData.username) {
-        content.textContent = userData.username;
-    } else {
-        console.error('Username not found.');
-        content.textContent = 'User data not available.';
-    }
+  if (userData) {
+    content.innerHTML = userData.last_name || 'N/A'
+  } else {
+    content.innerHTML = 'User data not available.';
+  }
 }
+
+// Initialize the app and fetch user data
+document.addEventListener('DOMContentLoaded', () => {
+  const WebApp = window.Telegram.WebApp;
+
+  // Retrieve user data from the WebApp SDK
+  if (WebApp.initDataUnsafe && WebApp.initDataUnsafe.user) {
+    const userData = WebApp.initDataUnsafe.user;
+    displayUserData(userData);
+  } else {
+    console.error('User data is not available in WebApp.initDataUnsafe.');
+    document.getElementById('content').innerHTML = 'User data not found.';
+  }
+});
 
 
 
