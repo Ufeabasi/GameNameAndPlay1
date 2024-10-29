@@ -215,12 +215,12 @@ endGameButton.addEventListener('click', endGame);
 
 // Function to display user data
 function displayUserData(userData) {
-  const content = document.getElementById('content');
+  const user_name = document.getElementById('content');
 
   if (userData) {
-    content.innerHTML = userData.last_name || 'N/A'
+    user_name.innerHTML = userData.last_name || 'N/A'
   } else {
-    content.innerHTML = 'User data not available.';
+    user_name.innerHTML = 'User data not available.';
   }
 }
 
