@@ -215,12 +215,12 @@ endGameButton.addEventListener('click', endGame);
 
 // Function to display user data
 function displayUserData(userData) {
-  const user_name = document.getElementById('content');
+  const UserName = document.getElementById('user_name');
 
   if (userData) {
-    user_name.innerHTML = userData.last_name || 'N/A'
+    userName.innerHTML = userData.last_name || 'N/A'
   } else {
-    user_name.innerHTML = 'User data not available.';
+    UserName.innerHTML = 'User data not available.';
   }
 }
 
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
     displayUserData(userData);
   } else {
     console.error('User data is not available in WebApp.initDataUnsafe.');
-    document.getElementById('content').innerHTML = 'User data not found.';
+    document.getElementById('user_name').innerHTML = 'User data not found.';
   }
 });
 
